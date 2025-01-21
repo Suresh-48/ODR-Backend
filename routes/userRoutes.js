@@ -25,7 +25,7 @@ router.get(
     }
   );
   
-  // Example: Arbitrator-specific route
+  
   router.get(
     '/arbitrator/dashboard',
     authenticateToken,

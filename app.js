@@ -86,6 +86,7 @@ process.on("SIGTERM", () => {
 
 // import routes
 import userRoutes from "./routes/userRoutes.js";
+import blogRoutes from "./routes/blogRoutes.js";
 
 app.use(cors);
 
@@ -127,5 +128,5 @@ app.use(express.urlencoded({ extended: true }));
 
 // routes path define here
 app.use("/api/v1/users", userRoutes);
-
+app.use("/api/v1/blog",blogRoutes);
 export default app;

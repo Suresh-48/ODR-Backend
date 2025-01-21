@@ -106,8 +106,7 @@ try{
 
 
 export async function loginUser(req, res) {
-  const { email, password, role, disclaimerAccepted } = req.body;
-  console.log("req....",req)
+  const { email, password, role, disclaimerAccepted } = req.body;  
   const ipAddress = req.ip;
 
   try {
